@@ -1,0 +1,29 @@
+.footer__contacts {
+  margin-right: 70px;
+}
+.footer__adress {
+  margin-top: 20px;
+}
+.footer__item + .footer__item {
+  margin-top: 9px;
+}
+
+.footer__list {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link--white {
+  color: var(--primary-white-color);
+}
+
+.footer__link:focus,
+.footer__link:hover {
+  color: var(--accent-color);
+}

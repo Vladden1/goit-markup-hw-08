@@ -1,0 +1,25 @@
+.footer__socials {
+  color: var(--primary-white-color);
+  margin-right: 93px;
+}
+.socials__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__icon--white {
+  fill: #ffffff;
+}
+
+.social__link:focus,
+.social__link:hover {
+  background-color: var(--accent-color);
+}

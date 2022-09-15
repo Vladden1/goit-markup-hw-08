@@ -1,0 +1,32 @@
+// utils styles - переменные
+
+@import './utils/vars';
+
+// base styles - базовые стили
+@import './base/commin';
+@import './base/reset';
+@import './base/container';
+@import './base/hidden';
+@import './base/section';
+
+// components style - компонентные стили
+@import './components/navigation';
+@import './components/button';
+@import './components/socials';
+@import './components/modal';
+@import './components/registration-form';
+@import './components/footer-contacts';
+@import './components/footer-socials';
+@import './components/subscribe-form';
+@import './components/button-filtr-list';
+@import './components/logo';
+
+// layout styles
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/specialty';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/portfolio';
