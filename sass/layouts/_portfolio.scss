@@ -1,5 +1,6 @@
 .examples-list {
   display: flex;
+
   flex-wrap: wrap;
   padding: 0px;
   gap: 30px;
@@ -9,7 +10,9 @@
 }
 
 .portfolio-link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   color: var(--title-text-color);
 
   &:hover,
@@ -19,6 +22,11 @@
   }
 }
 
+.examples-list__item {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    max-width: 354px;
+  }
+}
 .examples-list .title-card {
   font-weight: 700;
   font-size: 18px;
@@ -37,6 +45,7 @@
   background: #ffffff;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .thumb-card {
@@ -65,5 +74,13 @@
 
 .portfolio-link:hover .thumb-text,
 .portfolio-link:focus .thumb-text {
+  transform: translateY(-100%);
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    transform: none;
+  }
+}
+
+.portfolio-link:active .thumb-text {
   transform: translateY(-100%);
 }

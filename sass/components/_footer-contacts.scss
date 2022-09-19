@@ -1,8 +1,28 @@
 .footer__contacts {
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer__adress {
   margin-top: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+  }
 }
 .footer__item + .footer__item {
   margin-top: 9px;

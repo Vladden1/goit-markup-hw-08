@@ -27,7 +27,7 @@
           <a href="./index.html" class="logo"> Web<span class="logo logo__dark">Studio</span> </a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="#about" class="site-nav__link">Студія</a>
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link active">Портфоліо</a>
@@ -37,24 +37,34 @@
             </li>
           </ul>
         </nav>
-        <ul class="call-us-list">
-          <li class="call-us-item">
-            <a href="mailto:info@devstudio.com" class="call-us-link mail">
-              <svg class="icon" width="20px" height="20px">
+        <ul class="call-us__list">
+          <li class="call-us__item">
+            <a href="mailto:info@devstudio.com" class="call-us__link">
+              <svg class="call-us__icon mail" width="10px" height="10px">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="call-us-link tel">
-              <svg class="icon" width="20px" height="20px">
+          <li class="call-us__item">
+            <a href="tel:+380961111111" class="call-us__link">
+              <svg class="call-us__icon tel" width="20px" height="14px">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn__icon" width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -82,8 +92,8 @@
 
           <!-- =====примеры работ / карточки===== -->
           <ul class="examples-list">
-            <li class="item">
-              <a href="#" class="portfolio-link">
+            <li class="examples-list__item">
+              <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img
                     src="./images/portfolio/project1.jpeg"
@@ -102,7 +112,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img
@@ -123,7 +133,7 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img src="./images/portfolio/project3.jpeg" alt="риба з текстом" width="370" />
@@ -139,7 +149,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img src="./images/portfolio/project4.jpeg" alt="наушники" width="370" />
@@ -155,7 +165,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img src="./images/portfolio/project5.jpeg" alt="две коробки" width="370" />
@@ -171,7 +181,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img
@@ -191,7 +201,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img src="./images/portfolio/project7.jpeg" alt="відкритий журнал" width="370" />
@@ -207,7 +217,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img src="./images/portfolio/project8.jpeg" alt="бірка" width="370" />
@@ -223,7 +233,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="examples-list__item">
               <a href="" class="portfolio-link">
                 <div class="thumb-card">
                   <img src="./images/portfolio/project9.jpeg" alt="макбук на столі  " width="370" />
@@ -322,5 +332,62 @@
         </div>
       </div>
     </footer>
+    <!--nav-btn mobile version  -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-btn menu-toggle js-close-menu">
+        <svg class="menu-btn__icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <!--======= mobile-nav ========-->
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a href="./index.html" class="mobile-nav__link">Студія</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="./portfolio.html" class="mobile-nav__link active">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#contacts" class="mobile-nav__link">Контакти</a>
+        </li>
+      </ul>
+      <div class="mobile-wrap">
+        <!-- contacts -->
+        <ul class="mobile-contacts__list">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link tel"> +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__link mail">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <!-- socials -->
+        <ul class="mobile-socials__list">
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Instagram</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

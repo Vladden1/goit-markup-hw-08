@@ -6,7 +6,7 @@
 .container {
   // Mobile
 
-  max-width: 450px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -20,6 +20,9 @@
 
   // Desktop
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    min-width: 1200px;
   }
+
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
