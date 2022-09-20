@@ -28,7 +28,7 @@
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
 
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -37,9 +37,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 767px) {
-    width: 450px;
-    height: 609px;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
   }
 }
 

@@ -99,12 +99,6 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 1199px) {
-  .main-nav__container {
-    width: 100%;
-    padding: 10px 15px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .main-nav__container {
     -webkit-box-pack: justify;
@@ -183,7 +177,7 @@ textarea {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
   .site-nav__link.active::after, .site-nav__link:hover::after {
     display: none;
   }
@@ -383,7 +377,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -396,10 +390,9 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
   }
 }
 
@@ -719,7 +712,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .footer__socials {
-    margin-right: 93px;
+    margin-right: auto;
   }
 }
 
@@ -745,8 +738,10 @@ textarea {
   background-color: var(--accent-color);
 }
 
-.footer__subscribe {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer__subscribe {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__subscribe {
@@ -758,6 +753,11 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    width: 570px;
   }
 }
 
@@ -800,9 +800,9 @@ textarea {
 }
 
 .user-email {
-  max-width: 358px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -822,6 +822,11 @@ textarea {
   .user-email {
     min-width: 450px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 122px) {
+  .user-email {
+    margin-right: 12px;
   }
 }
 
@@ -1042,9 +1047,14 @@ textarea {
 
 .mobile-contacts__link.tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 480px) {
+  .mobile-contacts__link.tel {
+    font-size: 34px;
+  }
 }
 
 .mobile-contacts__link.mail {
@@ -1054,8 +1064,11 @@ textarea {
   letter-spacing: 0.02em;
 }
 
+.mobile-contacts__link.tel {
+  color: var(--accent-color);
+}
+
 .mobile-socials__list {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -1063,34 +1076,32 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 10px;
 }
 
-.mobile-contacts__link.tel {
-  color: var(--accent-color);
-}
-
-.mobile-socials__item:not(:last-child)::after {
-  content: "";
-  border: 1px solid rgba(33, 33, 33, 0.2);
+.mobile-socials__item:not(:last-child) .mobile-socials__link {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .mobile-socials__link {
   color: var(--accent-color);
+  padding-right: 10px;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 80px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 0;
+  }
 }
 
 .hero {
@@ -1154,7 +1165,7 @@ textarea {
   margin-left: auto;
   max-width: 696px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
@@ -1191,7 +1202,12 @@ textarea {
   line-height: 1.71;
 }
 .advantages .advantages__item {
-  max-width: 354px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .advantages .advantages__item {
+    max-width: 354px;
+  }
 }
 @media screen and (min-width: 1199px) {
   .advantages .advantages__item {
@@ -1330,6 +1346,11 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
 
 .team__wrap-card {
   padding: 30px 0;
@@ -1456,34 +1477,25 @@ textarea {
   padding: 60px 0;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-@media screen and (max-width: 767px) {
-  .footer__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: baseline;
