@@ -23,6 +23,9 @@
 }
 
 .examples-list__item {
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     max-width: 354px;
   }
